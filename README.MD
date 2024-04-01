@@ -1,6 +1,7 @@
 <h3>Compte Rendu </h3>
-Project Tree 
-![cap1.png](Capture%2Fcap1.png)
+
+Project Tree
+<img src="capture/cap1.png">
 
 L'entité JPA Patient : 
 ![cap2.png](Capture%2Fcap2.png)

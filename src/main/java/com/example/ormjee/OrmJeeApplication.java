@@ -13,11 +13,9 @@ import java.util.List;
 public class OrmJeeApplication implements CommandLineRunner {
     @Autowired
     private PatientRepository patienRepository;
-
     public static void main(String[] args) {
         SpringApplication.run(OrmJeeApplication.class, args);
     }
-
     @Override
     public void run(String... args) throws Exception {
       patienRepository.save(new Patient(null,"nom","2002-06-01",true,7));
@@ -40,8 +38,6 @@ public class OrmJeeApplication implements CommandLineRunner {
         patients2.forEach(p->
         { System.out.println(patients2.toString());
         });
-        System.out.println("--------");
-
     }
 
 }

@@ -23,7 +23,7 @@ public class OrmJeeApplication implements CommandLineRunner {
       patienRepository.save(new Patient(null,"nom3","2000-06-01",true,3));
       List<Patient> patients=patienRepository.findAll();
       patients.forEach(p->
-      { System.out.println(patients.toString());
+      { System.out.println(p.toString());
       });
       Patient patient=patienRepository.findById(Long.valueOf(1)).get();
         System.out.println("**********");
@@ -36,7 +36,7 @@ public class OrmJeeApplication implements CommandLineRunner {
        patienRepository.deleteById(Long.valueOf(1));
         List<Patient> patients2=patienRepository.findAll();
         patients2.forEach(p->
-        { System.out.println(patients2.toString());
+        { System.out.println(p.toString());
         });
     }
 
